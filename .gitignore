@@ -1,0 +1,19 @@
+# .terraform.lock.hc1
+# locks the provider (plug-in) version 
+# a lock file thats created when you do a terraform init command to update the plug-in
+
+# doesn't contain sensitive files, just to avoid bloat in our remote repo
+.terraform/ 
+
+# most important files to protect(contain credentials used by terraform)
+terraform.tfstate
+terraform.tfstate.backup
+
+# variables 
+*.tfvars
+*.auto.tfvars
+variable.tf
+
+# override giles
+override.tf
+override.tf.json
