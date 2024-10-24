@@ -17,4 +17,3 @@ variable.tf
 # override giles
 override.tf
 override.tf.json
-.terraform/
