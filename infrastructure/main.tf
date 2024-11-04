@@ -42,7 +42,7 @@ resource "azurerm_subnet" "db_subnet" {
 
 # Network Security Group for App VM
 resource "azurerm_network_security_group" "app_nsg" {
-  name                = "app-nsg"
+  name                = "ilhaan_app-nsg"
   location            = data.azurerm_resource_group.tech264.location
   resource_group_name = data.azurerm_resource_group.tech264.name
 
@@ -73,7 +73,7 @@ resource "azurerm_network_security_group" "app_nsg" {
 
 # Network Security Group for DB VM
 resource "azurerm_network_security_group" "db_nsg" {
-  name                = "db-nsg"
+  name                = "ilhaan_db-nsg"
   location            = data.azurerm_resource_group.tech264.location
   resource_group_name = data.azurerm_resource_group.tech264.name
 
@@ -141,7 +141,7 @@ resource "azurerm_network_interface" "db_nic" {
 
 # Public IP for App VM (for SSH access)
 resource "azurerm_public_ip" "app_public_ip" {
-  name                = "app-public-ip"
+  name                = "ilhaan_app-public-ip"
   location            = data.azurerm_resource_group.tech264.location
   resource_group_name = data.azurerm_resource_group.tech264.name
   allocation_method   = "Static"

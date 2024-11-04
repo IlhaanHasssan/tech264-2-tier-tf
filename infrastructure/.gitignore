@@ -4,7 +4,7 @@
 
 # doesn't contain sensitive files, just to avoid bloat in our remote repo
 .terraform/ 
-
+*.tfstate
 # most important files to protect(contain credentials used by terraform)
 terraform.tfstate
 terraform.tfstate.backup

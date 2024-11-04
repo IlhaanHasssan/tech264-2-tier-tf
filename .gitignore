@@ -8,7 +8,7 @@
 # most important files to protect(contain credentials used by terraform)
 terraform.tfstate
 terraform.tfstate.backup
-
+*.tfstate
 # variables 
 *.tfvars
 *.auto.tfvars
